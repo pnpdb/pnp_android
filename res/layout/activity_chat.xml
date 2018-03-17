@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/actionbar_id"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        layout="@layout/actionbar" />
+
+    <!-- 底部按钮以及 编辑框 -->
+
+    <RelativeLayout
+        android:id="@+id/chat_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/chat_bottom_v"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/chat_bottom_bg"
+            android:focusable="true"
+            android:focusableInTouchMode="true" >
+
+            <Button
+                android:id="@+id/chat_switch_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:background="@drawable/voice_button"
+                android:contentDescription="@string/description" />
+
+            <Button
+                android:id="@+id/chat_motion_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:layout_toRightOf="@+id/chat_switch_button"
+                android:background="@drawable/motion_button"
+                android:contentDescription="@string/description" />
+
+            <LinearLayout
+                android:id="@+id/chat_share_send_ll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp" >
+
+                <Button
+                    android:id="@+id/chat_share_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/share_button" />
+
+                <Button
+                    android:id="@+id/chat_send_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/send_button"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/chat_content"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/chat_share_send_ll"
+                android:layout_toRightOf="@+id/chat_motion_button"
+                android:background="@drawable/edittext_change"
+                android:hint="@string/please_input"
+                android:singleLine="true"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/chat_speak"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/chat_share_send_ll"
+                android:layout_toRightOf="@+id/chat_motion_button"
+                android:background="@drawable/speak_selector"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <include
+            android:id="@+id/chat_bottom_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="200dip"
+            android:layout_below="@+id/chat_bottom_v"
+            layout="@layout/chat_bottom"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/chat_bottom"
+        android:layout_below="@+id/actionbar_id" >
+
+        <!-- 聊天内容 listview -->
+
+        <ListView
+            android:id="@+id/chat_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#f6f6f6"
+            android:cacheColorHint="#0000"
+            android:divider="@null"
+            android:dividerHeight="5dp"
+            android:scrollbarStyle="outsideOverlay"
+            android:stackFromBottom="false" />
+        <!-- record图层 -->
+
+        <LinearLayout
+            android:id="@+id/chat_record_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/trans_bg_9"
+            android:orientation="vertical"
+            android:padding="10dip"
+            android:visibility="gone" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/audio_icon"
+                android:contentDescription="@string/app_name" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dip"
+                android:text="@string/record_recoding"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/dimen_text_s16" />
+
+            <TextView
+                android:id="@+id/acv_chat_audio_tip_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dip"
+                android:textColor="@android:color/white"
+                android:textIsSelectable="false"
+                android:textSize="@dimen/dimen_text_s12" />
+
+            <TextView
+                android:id="@+id/acv_chat_audio_tip_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dip"
+                android:text="@string/recod_cancle"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/dimen_text_s12" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

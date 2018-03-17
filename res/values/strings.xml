@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">品度</string>
+    <string name="description"></string>
+    <string name="login">登录</string>
+    <string name="account">账号</string>
+    <string name="password">密码</string>
+    <string name="findpassword">忘记密码</string>
+    <string name="regist_now">立即注册</string>
+   	<string name="regist">注册</string>
+    <string name="session">会话</string>
+    <string name="contacts">联系人</string>
+    <string name="more">更多</string>
+    <string name="session_null">您还没有任何会话</string>
+    <string name="delete">删除</string>
+    <string name="please_input">请输入....</string>
+    <string name="account_restrict">4&#8211;10字母、下划线或数字</string>
+    <string name="password_restrict">6&#8211;16个字符,区分大小写</string>
+    <string name="region">地区</string>
+    <string name="birthday">生日</string>
+    <string name="signature">个性签名</string>
+    <string name="album">个人相册</string>
+    <string name="sendMsg">发送消息</string>
+    <string name="recod_cancle">滑动到此取消</string>
+    <string name="record_recoding">录音中</string>
+    <string name="local_album">本机相册</string>
+    <string name="preview">预览</string>
+    <string name="send">发送</string>
+    <string name="scan_text">将二维码放入框内, 即可自动扫描</string>
+    <string name="logout">退出登录</string>
+    <string name="loading">加载中....</string>
+    <string name="card">名片</string>
+    <string name="album2">相册</string>
+    <string name="camera">相机</string>
+    <string name="cancle">取消</string>
+    <!-- temp -->
+    <string name="temp_account">账号:haosiyun</string>
+    <string name="temp_name">郝思云</string>
+    <string name="temp_region_val">北京 海淀</string>
+    <string name="temp_birth_val">1960-08-08</string>
+    <string name="temp_signature_val">Sorry Seems to be the hardest world!</string>
+
+</resources>

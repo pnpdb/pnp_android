@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/list_item_selector"
+    android:orientation="vertical"
+    android:padding="12dip" >
+
+    <TextView
+        android:id="@+id/personal_key"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:textColor="@android:color/black" />
+
+    <ImageView
+        android:id="@+id/personal_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/arrow1"
+        android:contentDescription="@string/description" />
+
+    <TextView
+        android:id="@+id/personal_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="80dip"
+        android:layout_marginRight="5dip"
+        android:layout_toLeftOf="@+id/personal_arrow"
+        android:textColor="@color/gray_text"
+        android:visibility="gone" />
+
+    <com.pnp.widget.CircleImageView
+        android:id="@+id/personal_image"
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dip"
+        android:layout_toLeftOf="@+id/personal_arrow"
+        android:contentDescription="@string/description"
+        android:src="@drawable/portrait_test"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.pnp.widget.SquareLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/album_grid_item_icon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitXY" />
+
+    <ImageView
+        android:id="@+id/album_grid_checked_icon"
+        android:layout_width="22dip"
+        android:layout_height="22dip"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="3dip"
+        android:layout_marginTop="3dip"
+        android:background="@drawable/checked_icon"
+        android:contentDescription="@string/app_name"
+        android:visibility="gone" />
+
+</com.pnp.widget.SquareLayout>

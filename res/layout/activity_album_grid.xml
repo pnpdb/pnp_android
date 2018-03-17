@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black" >
+
+    <include
+        android:id="@+id/actionbar_id"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        layout="@layout/actionbar" />
+
+    <!-- GridView -->
+
+    <GridView
+        android:id="@+id/acv_album_grid_gridview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/acv_album_bottomLayout"
+        android:layout_below="@+id/actionbar_id"
+        android:background="@android:color/white"
+        android:columnWidth="80dip"
+        android:gravity="center"
+        android:horizontalSpacing="0dp"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="auto_fit"
+        android:scrollbarStyle="insideOverlay"
+        android:scrollbars="vertical"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="0dp" />
+
+    <RelativeLayout
+        android:id="@+id/acv_album_bottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentBottom="true"
+        android:background="#1F222A" >
+
+        <Button
+            android:id="@+id/acv_album_grid_button_preview"
+            android:layout_width="62dip"
+            android:layout_height="32dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/titlebar_frame_button_selector"
+            android:text="@string/preview"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/acv_album_grid_button_send"
+            android:layout_width="60dip"
+            android:layout_height="30dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/button_short_blue_grey"
+            android:text="@string/send"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/actionbar_id"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        layout="@layout/actionbar" />
+
+    <!-- 头部开始 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dip"
+        android:background="#36444D"
+        android:padding="10dip" >
+
+        <Button
+            android:id="@+id/contactinfo_icon"
+            android:layout_width="60dip"
+            android:layout_height="60dip"
+            android:background="@drawable/portrait_test" />
+
+        <TextView
+            android:id="@+id/contactinfo_secText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/contactinfo_icon"
+            android:layout_marginLeft="10dip"
+            android:layout_toRightOf="@+id/contactinfo_icon"
+            android:text="@string/temp_account"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/contactinfo_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/contactinfo_secText"
+            android:layout_marginBottom="5dip"
+            android:layout_marginLeft="10dip"
+            android:layout_toRightOf="@+id/contactinfo_icon"
+            android:drawablePadding="5dip"
+            android:drawableRight="@drawable/contact_female"
+            android:text="@string/temp_name"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_text_s16" />
+    </RelativeLayout>
+    <!-- 头部结束 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="@drawable/gray_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="10dip" >
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/region"
+                android:textColor="@color/key" />
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/temp_region_val"
+                android:textColor="@color/value" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/gray_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="10dip" >
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/birthday"
+                android:textColor="@color/key" />
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/temp_birth_val"
+                android:textColor="@color/value" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/gray_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="10dip" >
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/signature"
+                android:textColor="@color/key" />
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/temp_signature_val"
+                android:textColor="@color/value" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="@drawable/gray_line" />
+    </LinearLayout>
+    <!-- album -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="@drawable/gray_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="10dip" >
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="@string/album"
+                android:textColor="@color/key" />
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="right"
+                android:orientation="horizontal"
+                android:textColor="@color/value" >
+
+                <ImageView
+                    android:id="@+id/contactinfo_img1"
+                    android:layout_width="40dip"
+                    android:layout_height="40dip"
+                    android:layout_marginRight="10dip"
+                    android:background="@drawable/yanminmin"
+                    android:contentDescription="@string/description" />
+
+                <ImageView
+                    android:id="@+id/contactinfo_img2"
+                    android:layout_width="40dip"
+                    android:layout_height="40dip"
+                    android:layout_marginRight="10dip"
+                    android:background="@drawable/portrait_in"
+                    android:contentDescription="@string/description" />
+
+                <ImageView
+                    android:id="@+id/contactinfo_img3"
+                    android:layout_width="40dip"
+                    android:layout_height="40dip"
+                    android:background="@drawable/portrait_test"
+                    android:contentDescription="@string/description" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="@drawable/gray_line" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/contactinfo_sendMsg"
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/login_box_selector"
+        android:text="@string/sendMsg"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/dimen_text_s18" />
+
+</LinearLayout>

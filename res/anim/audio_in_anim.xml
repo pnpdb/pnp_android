@@ -1,0 +1,17 @@
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false" >
+
+    <item
+        android:drawable="@drawable/audio_in_volumn_3"
+        android:duration="500"/>
+    <item
+        android:drawable="@drawable/audio_in_volumn_2"
+        android:duration="500"/>
+    <item
+        android:drawable="@drawable/audio_in_volumn_1"
+        android:duration="500"/>
+    <item
+        android:drawable="@drawable/audio_in_volumn_2"
+        android:duration="500"/>
+
+</animation-list>

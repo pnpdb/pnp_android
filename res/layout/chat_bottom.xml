@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f6f6f6"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@drawable/gray_line" />
+
+    <!-- 表情布局 -->
+
+    <RelativeLayout
+        android:id="@+id/chat_bottom_motion_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <!-- 表情类别 -->
+
+        <LinearLayout
+            android:id="@+id/motion_type_panel"
+            android:layout_width="match_parent"
+            android:layout_height="30dip"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/motion_type_bg"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="50dip"
+                android:layout_height="wrap_content"
+                android:background="@drawable/motion_type_focus_bg" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/motion_default_icon"
+                    android:contentDescription="@string/description" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/motion_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/motion_type_panel"
+            android:orientation="vertical" >
+
+            <com.pnp.widget.CirclePageIndicator
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/motion_indicator"
+                android:layout_width="fill_parent"
+                android:layout_height="30dip"
+                android:layout_alignParentBottom="true" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/motion_pager"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/motion_indicator"
+                android:background="#0000"
+                android:flipInterval="30"
+                android:persistentDrawingCache="animation" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <!-- share菜单 -->
+
+    <LinearLayout
+        android:id="@+id/chat_bottom_share_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <GridView
+            android:id="@+id/share_grid"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:horizontalSpacing="10dip"
+            android:numColumns="4"
+            android:paddingTop="10dip"
+            android:listSelector="@null"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="10dip" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/chatting_left_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/chatting_item_msg_left"
+        android:visibility="visible" />
+
+    <include
+        android:id="@+id/chatting_right_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/chatting_item_msg_right"
+        android:visibility="gone" />
+
+</LinearLayout>

@@ -1,0 +1,21 @@
+<resources>
+
+    <dimen name="dimen_text_s10">10sp</dimen>
+    <dimen name="dimen_text_s11">11sp</dimen>
+    <dimen name="dimen_text_s12">12sp</dimen>
+    <dimen name="dimen_text_s13">13sp</dimen>
+    <dimen name="dimen_text_s14">14sp</dimen>
+    <dimen name="dimen_text_s15">15sp</dimen>
+    <dimen name="dimen_text_s16">16sp</dimen>
+    <dimen name="dimen_text_s18">18sp</dimen>
+    <dimen name="dimen_text_s20">20sp</dimen>
+    <dimen name="dimen_text_s22">22sp</dimen>
+    <dimen name="dimen_text_s24">24sp</dimen>
+
+    <!-- gridView -->
+    <dimen name="itemSize">100dp</dimen>
+    <dimen name="itemBorderWidth">2dp</dimen>
+    <dimen name="gridMarginTopLeft">-2.5dp</dimen>
+    <dimen name="gridMarginBottomRight">-4dp</dimen>
+
+</resources>

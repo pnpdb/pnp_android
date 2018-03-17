@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/actionbar_id"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        layout="@layout/actionbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/edit_single_bg"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/regist_account_tip"
+            android:layout_width="70dip"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/account"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/dimen_text_s16" />
+
+        <EditText
+            android:id="@+id/regist_account"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/regist_account_tip"
+            android:background="@null"
+            android:hint="@string/account_restrict"
+            android:paddingLeft="3dip"
+            android:paddingRight="2dip"
+            android:textSize="@dimen/dimen_text_s16" />
+
+        <Button
+            android:id="@+id/regist_accountDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/button_delete"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/edit_single_bg"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/regist_passwd_tip"
+            android:layout_width="70dip"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/password"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/dimen_text_s16" />
+
+        <EditText
+            android:id="@+id/regist_passwd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/regist_passwd_tip"
+            android:background="@null"
+            android:hint="@string/password_restrict"
+            android:inputType="textPassword"
+            android:paddingLeft="3dip"
+            android:paddingRight="2dip"
+            android:textSize="@dimen/dimen_text_s16" />
+
+        <Button
+            android:id="@+id/regist_passwdDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/button_delete"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/regist_button"
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="20dip"
+        android:background="@drawable/regist_box_selector"
+        android:text="@string/regist_now"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/dimen_text_s18" />
+
+</LinearLayout>

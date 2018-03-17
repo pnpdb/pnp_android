@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#FFFFFF</color>
+    <color name="activity_bg">#F6F6F6</color>
+    <color name="gray_text">#666666</color>
+    <color name="list_item_pressed">#D9D9D9</color>
+    <color name="session_del_bg_pressed">#696969</color>
+    <color name="session_del_bg_normal">#808080</color>
+    <color name="floralwhite">#FFFAF0</color>
+    <color name="key">#030303</color>
+    <color name="value">#4F4F4F</color>
+    <color name="list_divider">#CFCFCF</color>
+    <!-- scan -->
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+
+</resources>

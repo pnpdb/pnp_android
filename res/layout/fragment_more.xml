@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="15dp" >
+
+    <ListView
+        android:id="@+id/more_list1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_bg"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/list_divider"
+        android:dividerHeight="0.1dp"
+        android:listSelector="#00000000" >
+    </ListView>
+
+    <ListView
+        android:id="@+id/more_list2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/round_bg"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/list_divider"
+        android:dividerHeight="0.1dp"
+        android:listSelector="#00000000" >
+    </ListView>
+
+    <ListView
+        android:id="@+id/more_list3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/round_bg"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/list_divider"
+        android:dividerHeight="1px"
+        android:listSelector="@android:color/transparent" >
+    </ListView>
+
+</LinearLayout>
